@@ -15,7 +15,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+/* 
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -29,5 +29,40 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+} */
+
+@layer base {
+  @font-face {
+    font-family: "OpenSans ExtraBold";
+    font-style: normal;
+    font-weight: 900;
+    src: local("OpenSans-ExtraBold"),
+      url("../asset/fonts/OpenSans-ExtraBold.ttf");
+  }
+  @font-face {
+    font-family: "OpenSans Bold";
+    font-style: normal;
+    font-weight: 800;
+    src: local("OpenSans-Bold"), url("../asset/fonts/OpenSans-Bold.ttf");
+  }
+  @font-face {
+    font-family: "OpenSans Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: local("OpenSans-Medium"), url("../asset/fonts/OpenSans-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "OpenSans Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("OpenSans-Regular"), url("../asset/fonts/OpenSans-Regular.ttf");
+  }
+  @font-face {
+    font-family: "OpenSans Light";
+    font-style: normal;
+    font-weight: 300;
+    src: local("OpenSans-Light"), url("../asset/fonts/OpenSans-Light.ttf");
   }
 }
