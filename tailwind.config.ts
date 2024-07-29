@@ -75,6 +75,9 @@ const config = {
       fontFamily: {
         openSans: ["var(--font-openSans)"],
       },
+      width: {
+        container: "90%",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
