@@ -9,8 +9,8 @@ const Navbar = () => {
         <div>
           <h2 className="text-3xl font-mono">Pervej</h2>
         </div>
-        <div>
-          <div className="flex gap-x-8">
+        <div className="flex items-center">
+          <div className="hidden md:flex gap-x-8">
             <div>
               <Link className="font-openSans text-lg" href="/home">
                 Home
@@ -36,6 +36,8 @@ const Navbar = () => {
                 Experiences
               </Link>
             </div>
+          </div>
+          <div className="block md:hidden">
             <MobileNavbar />
           </div>
         </div>
