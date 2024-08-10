@@ -1,10 +1,25 @@
 import Link from "next/link";
 import React from "react";
+import "@/styles/Banner.css";
 import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   return (
-    <div className="bg-gray-700">
+    <>
+      <div className="area">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <nav className="flex justify-between items-center w-container mx-auto py-4">
         <div>
           <h2 className="text-3xl font-mono">Pervej</h2>
@@ -42,7 +57,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 
