@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "../styles/globals.css";
+import Navbar from "@/shared/Navbar";
+import Footer from "@/shared/Footer";
 
 const openSans = Open_Sans({
   subsets: ["greek"],
@@ -20,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${openSans.className}`}>{children}</body>
+      <body className={`${openSans.className}`}>
+        <header>{<Navbar />}</header>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

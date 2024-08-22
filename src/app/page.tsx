@@ -1,13 +1,9 @@
-import Footer from "@/shared/Footer";
-import Navbar from "@/shared/Navbar";
+import Banner from "@/shared/Banner";
 
 export default function Home() {
   return (
     <main>
-      <header>{<Navbar />}</header>
-      <footer>
-        <Footer />
-      </footer>
+      <Banner />
     </main>
   );
 }
