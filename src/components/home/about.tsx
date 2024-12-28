@@ -1,14 +1,15 @@
 import EmptyIcon from "@/asset/icons/EmptyIcon";
-import FillStar from "@/asset/icons/fillStar";
+// import FillStar from "@/asset/icons/fillStar";
 import HalfFillStar from "@/asset/icons/HalfFillStar";
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import { MousePointer2 } from "lucide-react";
+import FillStar from "@/asset/icons/FillStar";
 
 const AboutSection = () => {
   return (
-    <section className="container h-screen">
+    <section className="h-screen container">
       <div className="flex md:flex-row gap-5 flex-col items-center justify-between h-screen">
         <div className="md:w-1/2 w-full">
           <h2 className="text-2xl mb-3">Meet Me</h2>
@@ -35,7 +36,7 @@ const AboutSection = () => {
             </span>
           </button>
         </div>
-        <div className="md:w-1/2 w-full border">
+        <div className="md:w-1/2 w-full">
           <div
             className="text-center mx-auto"
             style={{
