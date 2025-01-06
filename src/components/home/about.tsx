@@ -9,10 +9,10 @@ import FillStar from "@/asset/icons/FillStar";
 
 const AboutSection = () => {
   return (
-    <section className="h-screen container">
+    <section className="h-screen container mb-10">
       <div className="flex md:flex-row gap-5 flex-col items-center justify-between h-screen">
         <div className="md:w-1/2 w-full">
-          <h2 className="text-2xl mb-3">Meet Me</h2>
+          <h2 className="text-2xl mb-8">Meet Me</h2>
           <p className="mb-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
             pellentesque dolor. Nullam elementum urna vel imperdiet scelerisque.

@@ -17,6 +17,7 @@ const SkillTech = ({ icon, iconUrl, name }: propTypes) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
+    console.log("Helooooooooooooo");
     setIsFlipped((prevState) => !prevState);
   };
 
@@ -56,7 +57,7 @@ const SkillTech = ({ icon, iconUrl, name }: propTypes) => {
                 </div>
                 <div
                   onClick={handleClick}
-                  className="bg-white h-28 w-28 rounded flex justify-center items-center"
+                  className="bg-white h-28 w-28 rounded-full flex justify-center items-center"
                 >
                   <p className="text-black p-2">Intermediate</p>
                 </div>
