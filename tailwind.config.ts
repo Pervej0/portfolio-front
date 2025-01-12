@@ -81,6 +81,17 @@ const config = {
       width: {
         container: "90%",
       },
+      extend: {
+        keyframes: {
+          scroll: {
+            "0%": { transform: "translateY(-600px)" },
+            "100%": { transform: "translateY(0)" },
+          },
+        },
+        animation: {
+          scroll: "scroll 5s linear infinite", // Adjust duration and easing
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

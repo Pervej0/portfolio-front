@@ -1,0 +1,103 @@
+[
+  {
+    "projectName": "Glass Shop",
+    "projectType": "Full stack web application",
+    "category": ["Sunglass", "Fashion"],
+    "technologies": [
+      "Html",
+      "Css",
+      "React",
+      "Firebase",
+      "React Router",
+      "Node.js",
+      "Express",
+      "MongodB atlas"
+    ],
+    "bannerImg": "https://images.unsplash.com/photo-1592771385918-90eeffa48baf",
+    "images": [
+      "https://i.ibb.co/DtDTJy2/Optimized-project-Details-1.jpg",
+      "https://i.ibb.co/6PgrTr5/Optimized-dashboard.jpg",
+      "https://i.ibb.co/NYfHF4q/Optimized-contact-Us.jpg",
+      "https://i.ibb.co/fvDkpkS/Optimized-manage-Orders.jpg"
+    ],
+    "liveSite": "https://niche-products.firebaseapp.com/",
+    "clientCode": "https://github.com/Pervej0/glass-store-client",
+    "serverCode": "https://github.com/Pervej0/glass-store-server",
+    "description": [
+      "Build front-end with JavaScript/React/Tailwind and others packages. And developed backend and database with Node.js/Express/Mongo dB atlas.",
+      "Implemented dual dashboard for admin and user (to see admin panel login with: admin@admin.com/123456).",
+      "On the user dashboard they would be able to view & delete their previous ordered product. And also, all give their feedback on the “Add Review” page."
+    ]
+  },
+  {
+    "projectName": "Hello-Sky",
+    "projectType": "MERN Stack Web Application",
+    "category": ["Air Flight", "Sky Travel"],
+    "technologies": ["ReactJs", "Material UI", "Styled Component"],
+    "bannerImg": "https://images.unsplash.com/photo-1517935706615-2717063c2225",
+    "images": [
+      "https://i.ibb.co/R4cTKf8/hello-sky-full-page-min.png",
+      "https://i.ibb.co/Jq552mP/screencapture-hello-sky-96ac5-web-app-explore-2023-10-29-13-08-05-min.png",
+      "https://i.ibb.co/34L5t5C/screencapture-hello-sky-96ac5-web-app-experience-2023-10-29-13-08-42-min.png"
+    ],
+    "liveSite": "https://hello-sky-96ac5.web.app/",
+    "clientCode": "https://github.com/Pervej0/hello-sky-client",
+    "serverCode": "https://github.com/Pervej0/hello-sky-server",
+    "description": [
+      "The application is built on the MERN stack with a variety of functionalities that can be interacted with by the users and admin. (Admin Access info-admin@admin.com/123456)",
+      "Material UI with Styled Components let me intense options to make the UI better in experience.",
+      "The authentication applied with Firebase as well as used Google provider to sign in. For the backend, MVC structure followed which makes my code more organized and furnished."
+    ]
+  },
+  {
+    "projectName": "Knock Knock Service Center (KKSC)",
+    "projectType": "Full stack web application",
+    "category": ["Delivary", "Courier Service"],
+    "technologies": [
+      "Html",
+      "Css",
+      "React",
+      "Firebase",
+      "React Router",
+      "Node.js",
+      "Express",
+      "MongodB atlas"
+    ],
+
+    "bannerImg": "https://images.unsplash.com/photo-1604605801370-3396f9bd9cf0",
+    "images": [
+      "https://i.ibb.co/6NwbVZL/Optimized-project-Details-2.jpg",
+      "https://i.ibb.co/6s8VNpp/Optimized-about-Us.jpg",
+      "https://i.ibb.co/jMs9fJh/Optimized-add-Product.jpg"
+    ],
+    "liveSite": "https://knock-kncok-ceb54.firebaseapp.com/",
+    "clientCode": "https://github.com/Pervej0/knock-knock-client",
+    "serverCode": "https://github.com/Pervej0/knock-kncok-server",
+    "description": [
+      "JavaScript/React/MongoDB based goods delivery site implemented also firebase authentication.",
+      "Simple error handling while user wants to signup/sign in. Users data store in MongoDB atlas through node.js/express rest API. ",
+      "User can create signup/sign in and see their orders on the “My Order” page."
+    ]
+  },
+  {
+    "projectName": "getWell C.C.",
+    "projectType": "Front-end base application",
+    "category": ["Medical", "Clinic", "Hospital"],
+    "technologies": ["Html", "Css", "React", "Firebase", "React Router"],
+
+    "images": [
+      "https://i.ibb.co/jVBJ0mM/Optimized-project-Details-4.jpg",
+      "https://i.ibb.co/pvCLqMk/Optimized-get-Well-Contact.jpg",
+      "https://i.ibb.co/x1ZFvKf/Optimized-get-Well-About.jpg"
+    ],
+    "bannerImg": "https://images.unsplash.com/photo-1574706473454-a3b3da3fc5b5",
+    "liveSite": "https://getwell-clinic-center.web.app/",
+    "clientCode": "https://github.com/Pervej0/getWell-clinic-center",
+    "serverCode": "",
+    "description": [
+      "Front-end targeted clinic center web application which authentication accomplished by firebase and also handled basic errors",
+      "User can able to register/sign in with third-party providers Facebook & Google",
+      "Private protected route designed and good user experience focused"
+    ]
+  }
+]
