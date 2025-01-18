@@ -1,8 +1,35 @@
 [
   {
+    "projectName": "PetBuddy",
+    "projectType": "Full Stack application",
+    "categories": ["Pet", "Pet-adoption"],
+    "technologies": [
+      "NextJs",
+      "ShadCn",
+      "Redux ToolKit",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "images": [
+      "https://i.ibb.co.com/6XbDZC4/Pet-Buddy-Home-Page.png",
+      "https://i.ibb.co.com/Qd6BWHG/pet-Buddy-details.png",
+      "https://i.ibb.co.com/KGHcBgK/SignUp.png",
+      "https://i.ibb.co.com/R30cdC8/pet-Buddy-login.png"
+    ],
+    "bannerImg": "https://images.unsplash.com/photo-1518288774672-b94e808873ff",
+    "liveSite": "https://pet-buddy-front.vercel.app/",
+    "clientCode": "https://github.com/Pervej0/pet-buddy-front",
+    "serverCode": "https://github.com/Pervej0/petbuddy-back",
+    "description": [
+      "A web application built on Next.js that's purpose is to make pet animals available to the animal lover.",
+      "Authentication and Authorization handled with json web Token",
+      "User and Admin dashboard created based on their role."
+    ]
+  },
+  {
     "projectName": "Glass Shop",
     "projectType": "Full stack web application",
-    "category": ["Sunglass", "Fashion"],
+    "categories": ["Sunglass", "Fashion"],
     "technologies": [
       "Html",
       "Css",
@@ -15,10 +42,9 @@
     ],
     "bannerImg": "https://images.unsplash.com/photo-1592771385918-90eeffa48baf",
     "images": [
-      "https://i.ibb.co/DtDTJy2/Optimized-project-Details-1.jpg",
-      "https://i.ibb.co/6PgrTr5/Optimized-dashboard.jpg",
-      "https://i.ibb.co/NYfHF4q/Optimized-contact-Us.jpg",
-      "https://i.ibb.co/fvDkpkS/Optimized-manage-Orders.jpg"
+      "https://i.ibb.co.com/QKmX56h/glass-shop-home-page.png",
+      "https://i.ibb.co.com/cLGQ42D/glass-shop-login.png",
+      "https://i.ibb.co.com/51r63zn/glass-shop-dashboard.png"
     ],
     "liveSite": "https://niche-products.firebaseapp.com/",
     "clientCode": "https://github.com/Pervej0/glass-store-client",
@@ -32,7 +58,7 @@
   {
     "projectName": "Hello-Sky",
     "projectType": "MERN Stack Web Application",
-    "category": ["Air Flight", "Sky Travel"],
+    "categories": ["Air Flight", "Sky Travel"],
     "technologies": ["ReactJs", "Material UI", "Styled Component"],
     "bannerImg": "https://images.unsplash.com/photo-1517935706615-2717063c2225",
     "images": [
@@ -52,7 +78,7 @@
   {
     "projectName": "Knock Knock Service Center (KKSC)",
     "projectType": "Full stack web application",
-    "category": ["Delivary", "Courier Service"],
+    "categories": ["Delivery", "Courier Service"],
     "technologies": [
       "Html",
       "Css",
@@ -82,7 +108,7 @@
   {
     "projectName": "getWell C.C.",
     "projectType": "Front-end base application",
-    "category": ["Medical", "Clinic", "Hospital"],
+    "categories": ["Medical", "Clinic", "Hospital"],
     "technologies": ["Html", "Css", "React", "Firebase", "React Router"],
 
     "images": [
