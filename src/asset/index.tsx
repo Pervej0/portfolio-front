@@ -1,7 +1,13 @@
 import downArray from "./images/down-arrow.gif";
+import FrontEndIcon from "./gif/frontend.gif";
+import SoftwareIcon from "./gif/software.gif";
+import SoftwareIntegration from "./gif/software-integration.gif";
 
 const images = {
   downArray,
+  FrontEndIcon,
+  SoftwareIcon,
+  SoftwareIntegration,
 };
 
 export { images };
