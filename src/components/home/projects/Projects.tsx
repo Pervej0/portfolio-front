@@ -27,12 +27,12 @@ const Project = (prop: any) => {
       <Dialog>
         <ProjectModalContent project={prop.project} />
         <div className="relative rounded-lg group overflow-hidden">
-          <div className="h-[400px] w-full relative">
+          <div className="h-[50vh] w-full relative">
             <Image
               src={bannerImg}
               alt={`${bannerImg || "Hello_sky image"}`}
-              className="transition-transform duration-500 ease-in-out group-hover:scale-105 h-full w-full"
-              objectFit="contain"
+              className="transition-transform object-cover duration-500 ease-in-out group-hover:scale-105 h-full w-full"
+              objectFit="cover"
               height={500}
               width={500}
             />

@@ -79,3 +79,7 @@
     background-color: white !important;
   }
 }
+
+@layer components {
+  /* ... */
+}

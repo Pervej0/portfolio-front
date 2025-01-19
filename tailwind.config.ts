@@ -22,6 +22,9 @@ const config = {
     },
     extend: {
       colors: {
+        transparent: "transparent",
+        white: "#F5F5F5",
+        black: "#000000",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -90,6 +93,12 @@ const config = {
         },
         animation: {
           scroll: "scroll 5s linear infinite", // Adjust duration and easing
+        },
+        components: {
+          // Add reusable button styles
+          ".btn-transparent": {
+            backgroundColor: "red",
+          },
         },
       },
     },

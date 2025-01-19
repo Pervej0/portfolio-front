@@ -17,7 +17,6 @@ const SkillTech = ({ icon, iconUrl, name }: propTypes) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
-    console.log("Helooooooooooooo");
     setIsFlipped((prevState) => !prevState);
   };
 
