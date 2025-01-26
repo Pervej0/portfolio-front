@@ -14,7 +14,7 @@ const Blogs = () => {
     blog_2: 2,
     blog_3: 9,
   });
-  console.log(likeCount, "xxx");
+
   return (
     <div className="py-16">
       <div className="container min-h-screen pt-10">

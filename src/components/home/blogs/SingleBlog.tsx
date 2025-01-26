@@ -37,8 +37,8 @@ const SingleBlog = ({ data, setLikeCount, likeCount }: any) => {
           <Link href={`blog/${data.id}`}>
             <button className="border border-white px-3 py-1 text-sm rounded-md">
               Read More
-            </button>{" "}
-          </Link>{" "}
+            </button>
+          </Link>
         </div>
       </div>
     </div>
