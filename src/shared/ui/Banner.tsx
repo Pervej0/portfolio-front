@@ -1,5 +1,5 @@
 import { images } from "@/asset";
-import { DownloadIcon, GitHubIcon, LinkedIn } from "@/asset/svg";
+import { DownloadIcon, GitHubIcon, GitHubIcon2 } from "@/asset/svg";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,13 +22,7 @@ const Banner = () => {
             <div className="flex items-center justify-center mt-6 gap-x-3">
               <div className="flex gap-x-3">
                 <Link href="https://github.com/pervej0" target="_blank">
-                  <GitHubIcon />
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/md-pervej-hossain"
-                  target="_blank"
-                >
-                  <LinkedIn />
+                  <GitHubIcon2 />
                 </Link>
               </div>
               <Link

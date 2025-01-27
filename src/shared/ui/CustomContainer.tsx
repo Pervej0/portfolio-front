@@ -6,8 +6,9 @@ interface Props {
   className?: any;
 }
 const CustomContainer = ({ children, title, className }: Props) => {
+  console.log(className, "xxxxxxxxxxx");
   return (
-    <div className={`min-h-screen container ${{ ...className }}`}>
+    <div className={`container ${className}`}>
       <div>
         <h3 className="tracking-wider text-2xl font-openSans">{title}</h3>
       </div>
