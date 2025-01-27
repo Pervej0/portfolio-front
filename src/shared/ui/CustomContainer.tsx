@@ -6,9 +6,8 @@ interface Props {
   className?: any;
 }
 const CustomContainer = ({ children, title, className }: Props) => {
-  console.log(className, "xxxxxxxxxxx");
   return (
-    <div className={`container ${className}`}>
+    <div className={`container md:px-auto px-10 ${className}`}>
       <div>
         <h3 className="tracking-wider text-2xl font-openSans">{title}</h3>
       </div>

@@ -21,7 +21,7 @@ const Professional = ({
   return (
     <div className="border border-gray-200 min-h-[450px] flex justify-center flex-col items-center rounded-xl pb-10 pt-6">
       <div
-        className={`m-4 p-5  bg-white clip-your-needful-style ${
+        className={`md:m-4 md:p-5 p-0 m-0 bg-white clip-your-needful-style ${
           company === "Genex Infosys Limited" && "!bg-white"
         }`}
       >

@@ -3,6 +3,7 @@ import { JavaIcon, JavaScriptIcon, PHPIcon, TypeScriptIcon } from "@/asset/svg";
 import React from "react";
 import SkillTech from "./SkillTech";
 import SkillsCarousel from "./SkillsCarousel";
+import CustomContainer from "@/shared/ui/CustomContainer";
 
 const coreSkills = [
   {
@@ -38,8 +39,7 @@ const coreSkills = [
 const SkillSet = () => {
   return (
     <section className="bg-[#363636]">
-      <div className="min-h-screen container py-14 pb-16">
-        <h2 className="text-2xl">Digital Dexterity</h2>
+      <CustomContainer title="Digital Dexterity" className="py-14 pb-16">
         <div className="mt-10 mb-12 text-center">
           <h4 className="font-bold py-1 inline-block bg-white text-black px-6 rounded-md">
             --- Core Technologies ---
@@ -58,7 +58,7 @@ const SkillSet = () => {
           </h4>
         </div>
         <SkillsCarousel />
-      </div>
+      </CustomContainer>
     </section>
   );
 };

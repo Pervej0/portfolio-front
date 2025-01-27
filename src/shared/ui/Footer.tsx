@@ -4,7 +4,7 @@ import SocialIcon from "./SocialIcon";
 const Footer = () => {
   return (
     <div
-      className="py-4 bg-gray-700 border border-gray-400"
+      className="py-6 bg-gray-700 "
       style={{
         backgroundColor: "#252525",
       }}
@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container">
         <div className="flex md:justify-between justify-center items-center flex-wrap">
           <div>
-            <h5 className="text-white mb-4">
+            <h5 className="text-white text-lg mb-4">
               Copyright © All rights reserved.
             </h5>
           </div>

@@ -33,83 +33,94 @@ const Contact = () => {
     console.log("Form submitted:", data);
   };
   return (
-    <CustomContainer title="Contact Us" className="mb-10 mt-5">
-      <div className="flex gap-10 justify-between md:flex-row flex-col items-center py-10">
-        <Card className="bg-transparent border-0 md:w-1/2 w-full p-4">
-          <CardContent>
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-              {/* Name Field */}
-              <div>
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" {...register("name")} />
-                {errors.name && (
-                  <p className="text-red-500 text-sm">{errors.name.message}</p>
+    <section className="bg-[#303030] py-6 mt-6">
+      <CustomContainer title="Contact Us" className="mt-5 px-4 md:px-auto">
+        <div className="flex gap-10 md:justify-between justify-center md:flex-row flex-col items-center py-10">
+          <Card className="bg-transparent border-0 md:w-1/2 w-full md:p-4 p-0 m-0">
+            <CardContent>
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                {/* Name Field */}
+                <div>
+                  <Label htmlFor="name">Name</Label>
+                  <Input id="name" {...register("name")} />
+                  {errors.name && (
+                    <p className="text-red-500 text-sm">
+                      {errors.name.message}
+                    </p>
+                  )}
+                </div>
+                <div>
+                  <Label htmlFor="name">Email</Label>
+                  <Input id="email" {...register("email")} />
+                  {errors.name && (
+                    <p className="text-red-500 text-sm">
+                      {errors.name.message}
+                    </p>
+                  )}
+                </div>
+                <Textarea
+                  id="message"
+                  placeholder="Message here"
+                  className="resize-none"
+                  {...register("message")}
+                />
+                {errors.message && (
+                  <p className="text-red-500 text-sm">
+                    {errors.message.message}
+                  </p>
                 )}
+                {/* Submit Button */}
+                <Button
+                  type="submit"
+                  className="uppercase px-6 border-2 rounded"
+                >
+                  Send Message
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+          <div className="md:w-1/2 w-full">
+            <div className="flex gap-6 flex-col">
+              <div className="flex items-center gap-x-8">
+                <div>
+                  <span>
+                    <House />
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-2xl tracking-wider mb-2">Location</h3>
+                  <h6 className="text-md">
+                    Cha-95/2/B, North Badda, Dhaka Bangladesh
+                  </h6>
+                </div>
               </div>
-              <div>
-                <Label htmlFor="name">Email</Label>
-                <Input id="email" {...register("email")} />
-                {errors.name && (
-                  <p className="text-red-500 text-sm">{errors.name.message}</p>
-                )}
+              <div className="flex items-center gap-x-8">
+                <div>
+                  <span>
+                    <Phone />
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-xl tracking-wider mb-2">Phone</h3>
+                  <h6 className="text-md">+88 01685445764</h6>
+                </div>
               </div>
-              <Textarea
-                id="message"
-                placeholder="Message here"
-                className="resize-none"
-                {...register("message")}
-              />
-              {errors.message && (
-                <p className="text-red-500 text-sm">{errors.message.message}</p>
-              )}
-              {/* Submit Button */}
-              <Button type="submit" className="uppercase px-6 border-2 rounded">
-                Send Message
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
-        <div className="md:w-1/2 w-full">
-          <div className="flex gap-6 flex-col">
-            <div className="flex items-center gap-x-8">
-              <div>
-                <span>
-                  <House />
-                </span>
-              </div>
-              <div>
-                <h3 className="text-2xl tracking-wider mb-2">Location</h3>
-                <h6 className="text-md">
-                  Cha-95/2/B, North Badda, Dhaka Bangladesh
-                </h6>
-              </div>
-            </div>
-            <div className="flex items-center gap-x-8">
-              <div>
-                <span>
-                  <Phone />
-                </span>
-              </div>
-              <div>
-                <h3 className="text-xl tracking-wider mb-2">Phone</h3>
-                <h6 className="text-md">+88 01685445764</h6>
-              </div>
-            </div>
-            <div className="flex items-center gap-x-8">
-              <div>
-                <span>
-                  <Mail />
-                </span>
-              </div>
-              <div>
-                <h3 className="text-xl tracking-wider mb-2">Email</h3>
-                <h6 className="text-md">mdpervejhossain0@gmail.com</h6>
+              <div className="flex items-center gap-x-8">
+                <div>
+                  <span>
+                    <Mail />
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-xl tracking-wider mb-2">Email</h3>
+                  <h6 className="text-md">mdpervejhossain0@gmail.com</h6>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </CustomContainer>
+      </CustomContainer>
+    </section>
   );
 };
 

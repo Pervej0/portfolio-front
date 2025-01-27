@@ -6,6 +6,8 @@ import blogsData from "../../../asset/blogs.json";
 import { ThumbsUp } from "lucide-react";
 import SingleBlog from "./SingleBlog";
 import Link from "next/link";
+import CustomContainer from "@/shared/ui/CustomContainer";
+import { Button } from "@/components/ui/button";
 
 const Blogs = () => {
   const { img, title, name, description, like, id } = blogsData[0];
@@ -16,13 +18,13 @@ const Blogs = () => {
   });
 
   return (
-    <div className="py-16">
-      <div className="container min-h-screen pt-10">
-        <div>
-          <h2 className="text-2xl mb-8">Blogs & Articles</h2>
-        </div>
-        <div className="flex gap-6 justify-between items-center">
-          <div className="md:w-3/4 w-full flex flex-col items-center">
+    <div className="py-6">
+      <CustomContainer
+        title="Blogs & Articles"
+        className="min-h-screen pt-10 px-4 md:px-auto"
+      >
+        <div className="flex md:flex-row flex-col gap-6 gap-x-8 justify-between items-center md:mt-10">
+          <div className="md:w-8/12 w-full flex flex-col items-center">
             {blogsData?.slice(1, 3).map((item, index) => (
               <SingleBlog
                 likeCount={likeCount}
@@ -32,10 +34,16 @@ const Blogs = () => {
               />
             ))}
           </div>
-          <div className="md:w-1/4 w-full">
+          <div className="md:w-4/12 w-full">
             <div className="bg-[#303030] rounded-xl">
-              <div>
-                <Image src={img} alt={title} height={500} width={500} />
+              <div className="md:w-full md:h-full sm:h-3/5 sm:w-3/5 h-full w-full mx-auto">
+                <Image
+                  className="rounded-md w-full"
+                  src={img}
+                  alt={title}
+                  height={500}
+                  width={500}
+                />
               </div>
               <div className="p-4 pb-6">
                 <h5 className="text-white text-lg mt-3">{title}</h5>
@@ -62,9 +70,7 @@ const Blogs = () => {
                   {description.slice(0, 200)} ...
                 </p>
                 <Link href={`blog/${id}`}>
-                  <button className="border border-white px-3 py-1 text-sm rounded-md">
-                    Read More
-                  </button>
+                  <Button className="px-3 text-sm rounded-md">Read More</Button>
                 </Link>
               </div>
             </div>
@@ -78,7 +84,7 @@ const Blogs = () => {
             See More
           </Link>
         </div>
-      </div>
+      </CustomContainer>
     </div>
   );
 };
