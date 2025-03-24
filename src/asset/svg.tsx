@@ -687,3 +687,93 @@ export const HackerRankIcon = () => (
     ></path>
   </svg>
 );
+
+export const SuitCaseIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    x="0px"
+    y="0px"
+    width="40"
+    height="40"
+    viewBox="0 0 48 48"
+  >
+    <linearGradient
+      id="SVGID_1__LQszl5di7SHS_gr1"
+      x1="39.121"
+      x2="8.879"
+      y1="11.879"
+      y2="42.121"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#6560fe"></stop>
+      <stop offset=".033" stop-color="#6f6afe"></stop>
+      <stop offset=".197" stop-color="#9a97fe"></stop>
+      <stop offset=".362" stop-color="#bfbdff"></stop>
+      <stop offset=".525" stop-color="#dbdaff"></stop>
+      <stop offset=".687" stop-color="#efeeff"></stop>
+      <stop offset=".846" stop-color="#fbfbff"></stop>
+      <stop offset="1" stop-color="#fff"></stop>
+    </linearGradient>
+    <path
+      fill="url(#SVGID_1__LQszl5di7SHS_gr1)"
+      d="M38.5,12.5h-29c-1.657,0-3,1.343-3,3v23c0,1.657,1.343,3,3,3h29c1.657,0,3-1.343,3-3v-23	C41.5,13.843,40.157,12.5,38.5,12.5z"
+    ></path>
+    <path
+      fill="none"
+      stroke="#8251fe"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      stroke-width="3"
+      d="M31.5,12.5h7c1.657,0,3,1.343,3,3v23c0,1.657-1.343,3-3,3h-29c-1.657,0-3-1.343-3-3v-6.84"
+    ></path>
+    <path
+      fill="none"
+      stroke="#8251fe"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      stroke-width="3"
+      d="M6.5,21.948V15.5c0-1.657,1.343-3,3-3h14.989"
+    ></path>
+    <path
+      fill="none"
+      stroke="#8251fe"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      stroke-width="3"
+      d="M16.5,12.5v-4c0-1.105,0.895-2,2-2h11c1.105,0,2,0.895,2,2v4"
+    ></path>
+    <path
+      fill="none"
+      stroke="#8251fe"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      stroke-width="3"
+      d="M21,27.5h-8.948c-3.066,0-5.552-2.486-5.552-5.552v-5.213"
+    ></path>
+    <path
+      fill="none"
+      stroke="#8251fe"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      stroke-width="3"
+      d="M41.5,19.681v2.267c0,3.066-2.486,5.552-5.552,5.552H27.75"
+    ></path>
+    <rect
+      width="6"
+      height="6"
+      x="21"
+      y="24.5"
+      fill="#fff"
+      stroke="#8251fe"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      stroke-width="3"
+    ></rect>
+  </svg>
+);

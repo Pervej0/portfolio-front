@@ -70,8 +70,6 @@
   }
 }
 
-@tailwind utilities;
-
 @layer utilities {
   .clip-your-needful-style:nth-of-type(1) {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -89,4 +87,8 @@
 
 .level-slider .transition-colors {
   display: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }

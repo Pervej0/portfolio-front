@@ -47,33 +47,41 @@ const Navbar = () => {
       >
         <div className="container flex justify-between items-center">
           <div>
-            <h2 className="text-3xl font-mono">Pervej</h2>
+            <h2 className="text-3xl font-mono">
+              <Link href="/">Pervej</Link>
+            </h2>
           </div>
           <div className="flex items-center">
             <div className="hidden md:flex gap-x-8">
               <div>
-                <Link className="font-openSans text-lg" href="/home">
+                <Link className="font-openSans text-lg" href="#home_section">
                   Home
                 </Link>
               </div>
               <div>
-                <Link className="font-openSans text-lg" href="/home">
+                <Link className="font-openSans text-lg" href="#about_section">
                   About
                 </Link>
               </div>
               <div>
-                <Link className="font-openSans text-lg" href="/home">
+                <Link
+                  className="font-openSans text-lg"
+                  href="#showcase_section"
+                >
                   Showcase
                 </Link>
               </div>
               <div>
-                <Link className="font-openSans text-lg" href="/home">
+                <Link
+                  className="font-openSans text-lg"
+                  href="#experiences_section"
+                >
                   Experiences
                 </Link>
               </div>
               <div>
                 <Link className="font-openSans text-lg" href="/home">
-                  Experiences
+                  Get in Touch
                 </Link>
               </div>
             </div>

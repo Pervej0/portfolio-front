@@ -2,6 +2,7 @@ import { images } from "@/asset";
 import {
   DownloadIcon,
   GitHubIcon,
+  SuitCaseIcon,
   GitHubIcon2,
   HackerRankIcon,
 } from "@/asset/svg";
@@ -13,7 +14,7 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <div className="container">
+      <div className="container" id="home_section">
         <div className="flex gap-y-4 items-center justify-center min-h-[90vh]">
           <div className="text-center">
             <h1 className="md:text-4xl sm:text-3xl text-xl font-mono">
@@ -23,9 +24,18 @@ const Banner = () => {
               Md Pervej Hossain,
               <span className="md:text-3xl text-xl">From Dhaka Bangladesh</span>
             </h2>
-            <h2 className="md:text-4xl text-2xl tracking-wide font-mono font-bold mt-2 bg-gradient-to-r from-cyan-400 to-fuchsia-700 bg-clip-text text-transparent">
-              Fullstack Web Developer
-            </h2>
+            <div className="flex items-center my-2 justify-center gap-x-6">
+              <SuitCaseIcon />
+              <div className="my-4">
+                <h6 className="text-left">Working as</h6>
+                <h2 className="text-3xl text-left tracking-wide font-mono font-bold my-2 bg-gradient-to-r from-cyan-400 to-fuchsia-700 bg-clip-text text-transparent">
+                  Software Developer
+                </h2>
+                <h6 className="text-left text-xl">
+                  Cubix Technology <small>(Banasree Dhaka, Bangladesh)</small>
+                </h6>
+              </div>
+            </div>
             <div className="flex items-center justify-center mt-6 gap-x-3">
               <div className="flex gap-x-4">
                 <Link
