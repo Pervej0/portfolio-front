@@ -4,9 +4,11 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import "@/styles/Banner.css";
 import MobileNavbar from "./MobileNavbar";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,20 +26,22 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="area">
-        <ul className="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+      {pathname === "/" && (
+        <div className="area">
+          <ul className="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      )}
       <nav
         className={`mx-auto py-4 transition-all duration-300 ${
           isScrolled
@@ -57,22 +61,17 @@ const Navbar = () => {
                 </Link>
               </div>
               <div>
-                <Link className="font-openSans text-lg" href="/home">
+                <Link className="font-openSans text-lg" href="/about">
                   About
                 </Link>
               </div>
               <div>
-                <Link className="font-openSans text-lg" href="/home">
+                <Link className="font-openSans text-lg" href="/showcase">
                   Showcase
                 </Link>
               </div>
               <div>
-                <Link className="font-openSans text-lg" href="/home">
-                  Experiences
-                </Link>
-              </div>
-              <div>
-                <Link className="font-openSans text-lg" href="/home">
+                <Link className="font-openSans text-lg" href="/experience">
                   Experiences
                 </Link>
               </div>

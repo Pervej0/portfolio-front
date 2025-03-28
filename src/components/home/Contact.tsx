@@ -23,7 +23,7 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 const Contact = () => {
-  const form = useRef<HTMLDivElement>(null);
+  const form = useRef<HTMLFormElement>(null);
   const {
     register,
     handleSubmit,
@@ -35,12 +35,10 @@ const Contact = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined" && form.current) {
-      console.log("Element:", form.current);
     }
   }, []);
 
   const onSubmit = (data: FormData) => {
-    console.log(process.env.CONTACT_EMAIL_TEMP_ID, "xxx");
     emailjs
       .sendForm(
         process.env.EMAIL_SERVICE_ID as string,
