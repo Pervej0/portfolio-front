@@ -84,7 +84,7 @@ const Navbar = () => {
                 </Link>
               </div>
               <div>
-                <Link className="font-openSans text-lg" href="/home">
+                <Link className="font-openSans text-lg" href="#contact">
                   Get in Touch
                 </Link>
               </div>

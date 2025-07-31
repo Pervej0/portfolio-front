@@ -17,16 +17,16 @@ const ExperiencesDesc = {
     "Demonstrated database management skills with SQLite for device applications.",
     "Developed a tool to convert NBR data to Excel, streamlining processes and reducing workload.",
   ],
-  braniEx: [
-    "Collaborated on Feini.Finance, a role-based web application for collection requests.",
-    "Integrated STRAPI CMS, creating pages and components.",
-    "Converted Figma, PSD, and Sketch designs into responsive web pages per client needs.",
+  cubix: [
+    "Developed and upgraded web applications for CubixSMB, an ERP-based Hotel Management System, and fix uprising bugs",
+    "Resolved UI-related bugs and designed responsive, user-friendly pages and layouts.",
+    "Integrating APIs to display dynamic data and built custom admin panels for clients.",
   ],
 };
 
 const ProfessionalExperiences = () => {
   return (
-    <div className="bg-[#363636] pb-16">
+    <div className="bg-[#363636] pb-16" id="experiences_section">
       <CustomContainer title="Professional Experience" className="py-14 px-4">
         <div className="grid gap-10 items-center md:grid-cols-3 sm:grid-cols-2 grid-col mt-10">
           <Professional
@@ -47,11 +47,11 @@ const ProfessionalExperiences = () => {
           />
           <Professional
             imageUrl={images.SoftwareIcon}
-            position="Software Developer"
-            year={2024}
-            company="Brani Communications Pvt. Ltd."
-            location="Mumbai India"
-            desc={ExperiencesDesc.braniEx}
+            position="Junior Software Developer"
+            year={2025}
+            company="Cubix Technology"
+            location="Banasre, Dhaka"
+            desc={ExperiencesDesc.cubix}
           />
         </div>
       </CustomContainer>

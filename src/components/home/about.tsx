@@ -10,7 +10,7 @@ import CustomContainer from "@/shared/ui/CustomContainer";
 
 const AboutSection = () => {
   return (
-    <section className="py-8">
+    <section className="py-8" id="about_section">
       <div className="min-h-screen container pt-8">
         <div className="flex md:flex-row gap-5 flex-col items-center justify-between">
           <div className="md:w-1/2 w-full">

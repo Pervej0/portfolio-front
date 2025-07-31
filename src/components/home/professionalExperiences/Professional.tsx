@@ -19,7 +19,7 @@ const Professional = ({
   desc,
 }: propTypes) => {
   return (
-    <div className="border border-gray-200 min-h-[450px] flex justify-center flex-col items-center rounded-xl pb-10 pt-6">
+    <div className="border border-gray-500 min-h-[450px] flex justify-center flex-col items-center rounded-xl pb-10 pt-6">
       <div
         className={`md:m-4 md:p-5 p-0 m-0 bg-white clip-your-needful-style ${
           company === "Genex Infosys Limited" && "!bg-white"
@@ -34,7 +34,7 @@ const Professional = ({
       </div>
       <div className="pl-4 pr-4">
         <div className="flex items-center justify-between mt-3">
-          <h3 className="text-xl">{position}</h3>
+          <h3 className="text-xl font-semibold">{position}</h3>
           <h5 className="text-sm mt-1">{year}</h5>
         </div>
         <div className="flex items-center justify-between">

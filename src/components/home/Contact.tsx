@@ -65,7 +65,7 @@ const Contact = () => {
   return (
     <>
       <Toaster />
-      <section className="bg-[#303030] py-6 mt-6">
+      <section className="bg-[#303030] py-6 mt-6" id="contact">
         <CustomContainer title="Contact Us" className="mt-5 px-4 md:px-auto">
           <div className="flex gap-10 md:justify-between justify-center md:flex-row flex-col items-center py-10">
             <Card className="bg-transparent border-0 md:w-1/2 w-full md:p-4 p-0 m-0">
