@@ -17,7 +17,7 @@ const ExperiencesDesc = {
     "Demonstrated database management skills with SQLite for device applications.",
     "Developed a tool to convert NBR data to Excel, streamlining processes and reducing workload.",
   ],
-  cubix: [
+  cubixEx: [
     "Developed and upgraded web applications for CubixSMB, an ERP-based Hotel Management System, and fix uprising bugs",
     "Resolved UI-related bugs and designed responsive, user-friendly pages and layouts.",
     "Integrating APIs to display dynamic data and built custom admin panels for clients.",
@@ -31,7 +31,7 @@ const ProfessionalExperiences = () => {
         <div className="grid gap-10 items-center md:grid-cols-3 sm:grid-cols-2 grid-col mt-10">
           <Professional
             imageUrl={images.FrontEndIcon}
-            position="Frontend Developer"
+            position="Software Developer (Intern)"
             year={2022}
             company="TunicaLabs Media Pvt Ltd"
             location="Mumbai India"
@@ -51,7 +51,7 @@ const ProfessionalExperiences = () => {
             year={2025}
             company="Cubix Technology"
             location="Banasre, Dhaka"
-            desc={ExperiencesDesc.cubix}
+            desc={ExperiencesDesc.cubixEx}
           />
         </div>
       </CustomContainer>

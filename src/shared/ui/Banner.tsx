@@ -52,10 +52,10 @@ const Banner = () => {
                 href="https://drive.google.com/file/d/1ZjYo3i175q_N9pYxKPs_yXDDdzaPQdTP/view"
                 target="_blank"
               >
-                <button className="border-4 flex gap-x-2 rounded-md px-4 py-2 border-gray-100">
+                <Button className="border-2 flex items-center gap-x-2 rounded-md px-4 py-2 border-gray-100">
                   <DownloadIcon />
-                  Resume
-                </button>
+                  RESUME
+                </Button>
               </Link>
             </div>
             <div className="mt-8">

@@ -76,15 +76,12 @@ const Blogs = () => {
             </div>
           </div>
         </div>
-        <div className="text-center mt-10">
-          <Link
-            className="px-4 py-2 border border-white rounded text-sm"
-            href="/blogs"
-          >
-            See More
-          </Link>
-        </div>
       </CustomContainer>
+      <div className="text-center md:mt-8 mt-5 mb-2">
+        <Link className="px-4 text-sm" href="/blogs">
+          <Button>See More</Button>
+        </Link>
+      </div>
     </div>
   );
 };
