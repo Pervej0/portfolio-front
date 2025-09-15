@@ -34,9 +34,7 @@ const SingleBlog = ({ data, setLikeCount, likeCount }: any) => {
             >
               <ThumbsUp className="h-4 w-4" />
             </button>
-            <h5 className="text-md">
-              : {likeCount[`blog_${data.id}`]} || {data.like}
-            </h5>
+            <h5 className="text-md">: {data.like}</h5>
           </div>
           <p className="text-light my-3" style={{ fontSize: "15px" }}>
             {data.description.slice(0, 250)} ...

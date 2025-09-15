@@ -62,9 +62,7 @@ const Blogs = () => {
                   >
                     <ThumbsUp className="h-4 w-4" />
                   </button>
-                  <h5 className="text-md">
-                    : {likeCount.blog_1} || {like}
-                  </h5>
+                  <h5 className="text-md">: {like}</h5>
                 </div>
                 <p className="text-light my-3" style={{ fontSize: "15px" }}>
                   {description.slice(0, 200)} ...

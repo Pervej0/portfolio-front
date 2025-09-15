@@ -92,3 +92,17 @@
 html {
   scroll-behavior: smooth;
 }
+
+.cover-image {
+  background-image: url("https://i.ibb.co.com/prZcj0Mw/image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: white;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+}

@@ -1,5 +1,11 @@
 import { sqlIconUrl } from "@/asset";
-import { JavaIcon, JavaScriptIcon, PHPIcon, TypeScriptIcon } from "@/asset/svg";
+import {
+  CPlusIcon,
+  JavaIcon,
+  JavaScriptIcon,
+  PHPIcon,
+  TypeScriptIcon,
+} from "@/asset/svg";
 import React from "react";
 import SkillTech from "./SkillTech";
 import SkillsCarousel from "./SkillsCarousel";
@@ -7,28 +13,35 @@ import CustomContainer from "@/shared/ui/CustomContainer";
 
 const coreSkills = [
   {
-    id: 0,
+    id: 1,
     name: "JavaScript/TypeScript",
     icon: <JavaScriptIcon />,
     percentage: 85,
     level: "Specialty",
   },
   {
-    id: 1,
+    id: 0,
+    name: "C/C++",
+    icon: <CPlusIcon />,
+    percentage: 60,
+    level: "Elementary",
+  },
+  {
+    id: 2,
     name: "Java",
     icon: <JavaIcon />,
     percentage: 40,
     level: "Beginner",
   },
   {
-    id: 1,
+    id: 3,
     name: "PHP",
     icon: <PHPIcon />,
     percentage: 45,
     level: "Beginner",
   },
   {
-    id: 1,
+    id: 4,
     name: "SQL/NoSQL",
     iconUrl: sqlIconUrl,
     percentage: 76,

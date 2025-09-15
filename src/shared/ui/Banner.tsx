@@ -1,4 +1,4 @@
-import { images } from "@/asset";
+import { images, LeetCodeIcon } from "@/asset";
 import {
   DownloadIcon,
   GitHubIcon,
@@ -22,22 +22,35 @@ const Banner = () => {
             </h1>
             <h2 className="md:text-5xl sm:text-3xl text-2xl mt-2 font-mono">
               Md Pervej Hossain,
-              <span className="md:text-3xl text-xl">From Dhaka Bangladesh</span>
+              <span className="md:text-2xl text-xl">From Dhaka Bangladesh</span>
             </h2>
             <div className="flex items-center my-2 justify-center gap-x-6">
               <SuitCaseIcon />
-              <div className="my-4">
-                <h6 className="text-left">Working as</h6>
+              <div className="my-4 bg-white px-4 py-3 rounded-2xl bg-opacity-10">
+                <h6 className="text-left text-md font-bold text-gray-100">
+                  Working as
+                </h6>
                 <h2 className="text-3xl text-left tracking-wide font-mono font-bold my-2 bg-gradient-to-r from-cyan-400 to-fuchsia-700 bg-clip-text text-transparent">
                   Software Developer
                 </h2>
-                <h6 className="text-left text-xl">
-                  Cubix Technology <small>(Banasree Dhaka, Bangladesh)</small>
+                <h6 className="text-left font-semibold text-md text-green-500">
+                  Opening for New position <small>( Onsite or Remote )</small>
                 </h6>
               </div>
             </div>
             <div className="flex items-center justify-center mt-6 gap-x-3">
               <div className="flex gap-x-4">
+                <Link
+                  href="https://www.hackerrank.com/profile/Pervej0"
+                  target="_blank"
+                >
+                  <Image
+                    src={LeetCodeIcon}
+                    width={150}
+                    height={150}
+                    alt="LeetCode Icon"
+                  />
+                </Link>
                 <Link
                   href="https://www.hackerrank.com/profile/Pervej0"
                   target="_blank"
