@@ -34,3 +34,5 @@ export const CoverImage = "https://i.ibb.co.com/BHbLJFXK/portfolio-bg.png";
 export const CubixTechnologyIcon =
   "http://cubixbd.com/custom/images/home/LogoMotion.gif";
 export const GenexIcon = "https://genexinfosys.com/images/Genex-Logo.png";
+export const TunicaIcon =
+  "https://tunicalabsmedia.com/wp-content/uploads/2024/02/tunicalabsmedia-logo.webp";

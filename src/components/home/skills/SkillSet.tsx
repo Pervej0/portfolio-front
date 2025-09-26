@@ -23,7 +23,7 @@ const coreSkills = [
     id: 0,
     name: "C/C++",
     icon: <CPlusIcon />,
-    percentage: 60,
+    percentage: 55,
     level: "Elementary",
   },
   {
@@ -37,8 +37,8 @@ const coreSkills = [
     id: 3,
     name: "PHP",
     icon: <PHPIcon />,
-    percentage: 45,
-    level: "Beginner",
+    percentage: 55,
+    level: "Elementary",
   },
   {
     id: 4,

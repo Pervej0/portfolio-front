@@ -10,29 +10,31 @@ import CustomContainer from "@/shared/ui/CustomContainer";
 
 const AboutSection = () => {
   return (
-    <section className="py-8" id="about_section">
+    <section className="py-14" id="about_section">
       <div className="min-h-screen container pt-8">
         <div className="flex md:flex-row gap-5 flex-col items-center justify-between">
           <div className="md:w-1/2 w-full">
             <h2 className="text-2xl mb-8">Meet Me</h2>
+            <p className="mb-3">
+              I am Pervej, originally from Noakhali and raised in Dhaka. I
+              completed my Diploma in Engineering with two merit scholarships
+              and strong academic results in the final examination. Currently, I
+              am pursuing a Bachelor of Science in Computer Science and
+              Engineering at Dhaka International University (DIU).
+            </p>
+            <p className="mb-2">
+              My career objective is to become a successful developer in the
+              software industry. I have gained valuable industry experience
+              through roles as an Intern and Junior Developer, which have shaped
+              my problem-solving mindset and strengthened my ability to plan and
+              execute projects effectively.
+            </p>
             <p className="mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              ac pellentesque dolor. Nullam elementum urna vel imperdiet
-              scelerisque. Donec nec erat in urna lacinia ultrices. Nullam nec
-              fermentum libero. Nullam nec fermentum libero. Nullam nec
-              fermentum libero.
-              <br /> <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              ac pellentesque dolor. Nullam elementum urna vel imperdiet
-              scelerisque. Donec nec erat in urna lacinia ultrices. Nullam nec
-              fermentum libero. Nullam nec fermentum libero. Nullam nec
-              fermentum libero.
-              <br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              ac pellentesque dolor. Nullam elementum urna vel imperdiet
-              scelerisque. Donec nec erat in urna lacinia ultrices. Nullam nec
-              fermentum libero. Nullam nec fermentum libero. Nullam nec
-              fermentum libero.
+              In my opinion, my passion for continuous learning, combined with
+              my practical industry experience, defines who I am as a developer.
+              I am eager to embrace new challenges, contribute to impactful
+              projects, and grow into a professional who adds real value to the
+              software industry
             </p>
             <Button className="border-2 flex gap-x-2 rounded-md px-4 border-gray-100">
               View More{" "}
@@ -52,7 +54,7 @@ const AboutSection = () => {
               }}
             >
               <Image
-                src="https://i.ibb.co/84WsC3N/Md-Pervej-Hossain.jpg"
+                src="https://i.ibb.co.com/JRkTSzQC/Md-Pervej-Hossain-3.jpg"
                 alt="profile"
                 className="object-cover w-full h-full"
                 width={500}
@@ -112,7 +114,7 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center mt-4">
+            <div className="flex justify-start md:justify-center mt-4">
               <div>
                 <h3 className="text-xl font-semibold mb-2">
                   Expressive Skills

@@ -7,9 +7,9 @@ export const DownloadIcon = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="lucide lucide-cloud-download"
     >
       <path d="M12 13v8l-4-4" />
@@ -43,9 +43,9 @@ export const GitHubIcon2 = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="lucide lucide-github"
     >
       <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
@@ -115,15 +115,15 @@ export const PHPIcon = () => (
     viewBox="-0.96 -0.96 25.92 25.92"
     xmlns="http://www.w3.org/2000/svg"
     stroke="#000000"
-    stroke-width="0.096"
+    strokeWidth="0.096"
     height="60"
     width="60"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <path d="m12 5.601c-.035 0-.076 0-.116 0-1.61 0-3.18.175-4.69.507l.144-.027c-1.442.303-2.718.751-3.91 1.343l.094-.042c-1.011.487-1.867 1.139-2.57 1.93l-.007.008c-.571.624-.927 1.453-.945 2.364v.004c.019.914.374 1.741.946 2.367l-.002-.003c.71.799 1.566 1.451 2.529 1.917l.048.021c1.098.549 2.374.998 3.71 1.282l.106.019c1.366.305 2.936.48 4.546.48h.123-.006.116c1.61 0 3.18-.175 4.69-.507l-.144.027c1.442-.303 2.718-.751 3.91-1.343l-.094.042c1.011-.487 1.867-1.139 2.57-1.93l.007-.008c.571-.624.927-1.453.945-2.364v-.004c-.018-.915-.374-1.744-.947-2.371l.002.003c-.71-.799-1.566-1.451-2.529-1.917l-.048-.021c-1.098-.549-2.374-.998-3.71-1.282l-.106-.019c-1.366-.305-2.936-.48-4.546-.48-.041 0-.082 0-.123 0h.006zm-3.12 7.264c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.32 1.963h-1.447l1.28-6.675h2.773c.018 0 .04-.001.062-.001.36 0 .706.063 1.026.179l-.021-.007c.295.108.546.276.748.489l.001.001c.175.223.3.493.354.789l.002.011c.025.146.04.314.04.486 0 .196-.019.387-.055.573l.003-.019c-.036.179-.083.335-.142.485l.007-.019q-.086.221-.184.417-.122.196-.27.393c-.096.129-.201.242-.317.343l-.003.002zm4.172.589.565-2.822c.024-.107.038-.229.038-.355 0-.026-.001-.052-.002-.078v.004c-.001-.109-.043-.208-.111-.283-.069-.06-.151-.106-.241-.134l-.005-.001c-.125-.04-.269-.062-.418-.062-.017 0-.034 0-.051.001h.002-1.126l-.736 3.73h-1.423l1.28-6.48h1.423l-.343 1.767h1.28c.022 0 .047-.001.073-.001.331 0 .653.041.961.117l-.027-.006c.249.055.466.172.641.332l-.001-.001c.156.123.267.298.306.498l.001.005c.014.089.022.191.022.295 0 .17-.021.335-.062.492l.003-.014-.589 2.994zm7.902-2.184c-.04.181-.082.328-.132.473l.009-.031c-.054.159-.12.297-.201.425l.005-.008c-.069.155-.151.288-.248.408l.003-.004c-.098.122-.203.23-.317.329l-.003.003c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.343 1.959h-1.423l1.28-6.675h2.749c.022-.001.047-.001.073-.001.365 0 .716.063 1.041.18l-.022-.007c.287.104.529.272.718.488l.002.002c.19.222.325.497.378.799l.002.01c.022.131.035.281.035.435 0 .221-.026.435-.075.641l.004-.019zm-2.7-1.547h-.978l-.513 2.749h.856.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003zm-11.19 0h-.978l-.515 2.749h.858.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003z"></path>
@@ -139,9 +139,9 @@ export const PointerSVG = () => (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
     className="lucide lucide-pointer"
   >
     <path d="M22 14a8 8 0 0 1-8 8" />
@@ -263,8 +263,8 @@ export const ExpressIcon = () => (
       y2="43.514"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stop-color="#6dc7ff"></stop>
-      <stop offset="1" stop-color="#e6abff"></stop>
+      <stop offset="0" stopColor="#6dc7ff"></stop>
+      <stop offset="1" stopColor="#e6abff"></stop>
     </linearGradient>
     <path
       fill="url(#Ptgyoqd6DQJu9ZUJIh3sLa_2ZOaTclOqD4q_gr1)"
@@ -278,8 +278,8 @@ export const ExpressIcon = () => (
       y2="49"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stop-color="#1a6dff"></stop>
-      <stop offset="1" stop-color="#c822ff"></stop>
+      <stop offset="0" stopColor="#1a6dff"></stop>
+      <stop offset="1" stopColor="#c822ff"></stop>
     </linearGradient>
     <path
       fill="url(#Ptgyoqd6DQJu9ZUJIh3sLb_2ZOaTclOqD4q_gr2)"
@@ -293,8 +293,8 @@ export const ExpressIcon = () => (
       y2="50"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stop-color="#1a6dff"></stop>
-      <stop offset="1" stop-color="#c822ff"></stop>
+      <stop offset="0" stopColor="#1a6dff"></stop>
+      <stop offset="1" stopColor="#c822ff"></stop>
     </linearGradient>
     <path
       fill="url(#Ptgyoqd6DQJu9ZUJIh3sLc_2ZOaTclOqD4q_gr3)"
@@ -720,14 +720,14 @@ export const SuitCaseIcon = () => (
       y2="42.121"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stop-color="#6560fe"></stop>
-      <stop offset=".033" stop-color="#6f6afe"></stop>
-      <stop offset=".197" stop-color="#9a97fe"></stop>
-      <stop offset=".362" stop-color="#bfbdff"></stop>
-      <stop offset=".525" stop-color="#dbdaff"></stop>
-      <stop offset=".687" stop-color="#efeeff"></stop>
-      <stop offset=".846" stop-color="#fbfbff"></stop>
-      <stop offset="1" stop-color="#fff"></stop>
+      <stop offset="0" stopColor="#6560fe"></stop>
+      <stop offset=".033" stopColor="#6f6afe"></stop>
+      <stop offset=".197" stopColor="#9a97fe"></stop>
+      <stop offset=".362" stopColor="#bfbdff"></stop>
+      <stop offset=".525" stopColor="#dbdaff"></stop>
+      <stop offset=".687" stopColor="#efeeff"></stop>
+      <stop offset=".846" stopColor="#fbfbff"></stop>
+      <stop offset="1" stopColor="#fff"></stop>
     </linearGradient>
     <path
       fill="url(#SVGID_1__LQszl5di7SHS_gr1)"
@@ -736,46 +736,46 @@ export const SuitCaseIcon = () => (
     <path
       fill="none"
       stroke="#8251fe"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-miterlimit="10"
-      stroke-width="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit="10"
+      strokeWidth="3"
       d="M31.5,12.5h7c1.657,0,3,1.343,3,3v23c0,1.657-1.343,3-3,3h-29c-1.657,0-3-1.343-3-3v-6.84"
     ></path>
     <path
       fill="none"
       stroke="#8251fe"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-miterlimit="10"
-      stroke-width="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit="10"
+      strokeWidth="3"
       d="M6.5,21.948V15.5c0-1.657,1.343-3,3-3h14.989"
     ></path>
     <path
       fill="none"
       stroke="#8251fe"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-miterlimit="10"
-      stroke-width="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit="10"
+      strokeWidth="3"
       d="M16.5,12.5v-4c0-1.105,0.895-2,2-2h11c1.105,0,2,0.895,2,2v4"
     ></path>
     <path
       fill="none"
       stroke="#8251fe"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-miterlimit="10"
-      stroke-width="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit="10"
+      strokeWidth="3"
       d="M21,27.5h-8.948c-3.066,0-5.552-2.486-5.552-5.552v-5.213"
     ></path>
     <path
       fill="none"
       stroke="#8251fe"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-miterlimit="10"
-      stroke-width="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit="10"
+      strokeWidth="3"
       d="M41.5,19.681v2.267c0,3.066-2.486,5.552-5.552,5.552H27.75"
     ></path>
     <rect
@@ -785,10 +785,10 @@ export const SuitCaseIcon = () => (
       y="24.5"
       fill="#fff"
       stroke="#8251fe"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-miterlimit="10"
-      stroke-width="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit="10"
+      strokeWidth="3"
     ></rect>
   </svg>
 );
