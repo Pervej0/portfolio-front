@@ -62,7 +62,7 @@ const Banner = () => {
                 </Link>
               </div>
               <Link
-                href="https://drive.google.com/file/d/1ZjYo3i175q_N9pYxKPs_yXDDdzaPQdTP/view"
+                href="https://drive.google.com/file/d/1mYAZq1JDO_IarrOkYPyTnZGDuf8Fad2s/view"
                 target="_blank"
               >
                 <Button className="border-2 flex items-center gap-x-2 rounded-md px-4 py-2 border-gray-100">
