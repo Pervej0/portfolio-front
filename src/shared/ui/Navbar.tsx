@@ -58,12 +58,12 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="hidden md:flex gap-x-8">
               <div>
-                <Link className="font-openSans text-lg" href="#home_section">
+                <Link className="font-openSans text-lg" href="/">
                   Home
                 </Link>
               </div>
               <div>
-                <Link className="font-openSans text-lg" href="#about_section">
+                <Link className="font-openSans text-lg" href="/about">
                   About
                 </Link>
               </div>
@@ -76,10 +76,7 @@ const Navbar = () => {
                 </Link>
               </div>
               <div>
-                <Link
-                  className="font-openSans text-lg"
-                  href="#experiences_section"
-                >
+                <Link className="font-openSans text-lg" href="/experience">
                   Experiences
                 </Link>
               </div>

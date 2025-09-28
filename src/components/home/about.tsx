@@ -7,6 +7,7 @@ import { Button } from "../ui/button";
 import { MousePointer2 } from "lucide-react";
 import FillStar from "@/asset/icons/FillStar";
 import CustomContainer from "@/shared/ui/CustomContainer";
+import Link from "next/link";
 
 const AboutSection = () => {
   return (
@@ -36,12 +37,15 @@ const AboutSection = () => {
               projects, and grow into a professional who adds real value to the
               software industry
             </p>
-            <Button className="border-2 flex gap-x-2 rounded-md px-4 border-gray-100">
+            <Link
+              href="/about"
+              className="border-2 flex justify-center items-center gap-x-2 max-w-40 py-3 rounded-md px-4 border-gray-100"
+            >
               View More{" "}
               <span className="animate-bounce">
                 <MousePointer2 />
               </span>
-            </Button>
+            </Link>
           </div>
           <div className="md:w-1/2 w-full">
             <div
