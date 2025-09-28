@@ -1,5 +1,6 @@
 import { CubixTechnologyIcon, GenexIcon, TunicaIcon } from "@/asset";
 import GalleryContent from "@/shared/ui/GalleryContent";
+import PageTitle from "@/shared/ui/PageTitle";
 import Image from "next/image";
 import React from "react";
 
@@ -33,7 +34,8 @@ const ExperiencePage = () => {
 
   return (
     <>
-      <section className="relative py-16 overflow-hidden">
+      <PageTitle pageName="Industrial Experiences" />
+      <section className="relative mt-16 py-16 overflow-hidden">
         {/* Central Vertical Line */}
         <div className="absolute left-1/2 top-0 h-full w-1 bg-[#009463] -translate-x-1/2"></div>
 
