@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import blogsData from "../../../asset/blogs.json";
 import { ThumbsUp } from "lucide-react";
-import SingleBlog from "./SingleBlog";
+import Blog from "./blog";
 import Link from "next/link";
 import CustomContainer from "@/shared/ui/CustomContainer";
 import { Button } from "@/components/ui/button";
@@ -26,7 +26,7 @@ const Blogs = () => {
         <div className="flex md:flex-row flex-col gap-6 gap-x-8 justify-between items-center md:mt-10">
           <div className="md:w-8/12 w-full flex flex-col items-center">
             {blogsData?.slice(1, 3).map((item, index) => (
-              <SingleBlog
+              <Blog
                 likeCount={likeCount}
                 setLikeCount={setLikeCount}
                 key={index}
