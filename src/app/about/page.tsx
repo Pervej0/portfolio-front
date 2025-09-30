@@ -16,30 +16,21 @@ const AboutPage = () => {
       degree: "Bachelor of Science",
       course: "Computer Science & Engineering (CSE)",
       institute: "Dhaka International University (DIU)",
-      desc: `Each place where I worked I met some people those name always will
-      be remembered. I am lucky & enough competitive that I had chance to
-      meet those guys. From Cubix Technology Shoriful Vai (Senior
-      Developer) such a nice person I met. Always so much helpful and open
-      to take any questions from juniors.`,
+      desc: `I achieved a CGPA of 3.69 in my last semester and am now a 3rd-year student, actively enhancing my skills through HackerRank, LeetCode, and Full-Stack Web Development bootcamps. I continue to pursue my passion while staying up-to-date with the latest software industry developments. Skills: C, C++, Data Structures & Algorithms, OOP, Full-Stack Development.`,
     },
     {
       id: 1,
       degree: "Diploma Engineering",
       course: "Mechanical Technology",
       institute: "National Professional Institute (NPI)",
-      desc: `In Genex Infosys, I was ready to explore diverse experience working
-      closely with software development team. Visited field to maintain
-      sales data flow through EFD and SDC device restaurants in Dhaka. I met
-      closely with Zakir Ahmed (Project Manager) and Kamruzzaman Sir
-      (Project Lead) who gave me acknowledgement.`,
+      desc: `I completed my Diploma in Engineering in 2023 with a CGPA of 3.78, earning the highest grade in my department. I received two merit scholarships, a Talentpull scholarship, and actively led my department by connecting students and participating in college programs. I also achieved 6th place in the 7th March Speech Competition and am an active member of Zinnat Non-Profit Foundation. Skills include attention to detail, leadership development, and KIZEN.`,
     },
     {
       id: 2,
       degree: "Secondary School Certificate",
       course: "Science",
       institute: "Badda High School (BHS)",
-      desc: `Worked with Tunica team on multiple software solutions where I gained
-      insight into project collaboration and industry-standard workflow.`,
+      desc: `Completed SSC in Science with a GPA of 4.50, developing a strong foundation in science and mathematics, enhancing analytical and problem-solving skills, and actively participating in academic and extracurricular activities.`,
     },
   ];
 
@@ -97,7 +88,7 @@ const AboutPage = () => {
     <>
       <PageTitle
         pageName="My Story"
-        imgSrc="https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a"
+        imgSrc="https://i.ibb.co.com/3YBWCdT4/my-story.jpg"
       />
       <section className="relative my-16 py-16 overflow-hidden">
         {/* Central Vertical Line */}

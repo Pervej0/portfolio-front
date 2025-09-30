@@ -15,35 +15,49 @@ const ExperiencePage = () => {
       id: 0,
       company: "Cubix Technology",
       icon: CubixTechnologyIcon,
-      desc: `Each place where I worked I met some people those name always will
-      be remembered. I am lucky & enough competitive that I had chance to
-      meet those guys. From Cubix Technology Shoriful Vai (Senior
-      Developer) such a nice person I met. Always so much helpful and open
-      to take any questions from juniors.`,
+      year: "2025",
+      lists: [
+        "Enhanced CubixSMB ERP web apps",
+        "Fixed UI bugs, built responsive layouts",
+        "Integrated APIs, built custom admin panels",
+      ],
+      desc: `Worked in a software development team, collaborating with senior developers and receiving feedback that helped me improve my strategies. Among them, Shoriful Vai (Senior Developer) was an exceptional mentor—always helpful and open to questions from juniors.`,
     },
     {
       id: 1,
       company: "Genex Infosys Limited",
       icon: GenexIcon,
-      desc: `In Genex Infosys, I was ready to explore diverse experience working
-      closely with software development team. Visited field to maintain
-      sales data flow through EFD and SDC device restaurants in Dhaka. I met
-      closely with Zakir Ahmed (Project Manager) and Kamruzzaman Sir
-      (Project Lead) who gave me acknowledgement.`,
+      year: "2024",
+      lists: [
+        "Managed NBR VAT project with EFDMs & SDC devices",
+        "Handled SQLite database for device apps",
+        "Built Excel converter tool to streamline NBR data",
+      ],
+      desc: `At Genex Infosys, worked with the software team and managed sales data via EFD/SDC devices in Dhaka. Gained valuable guidance from Project Manager Zakir Ahmed and Project Lead Kamruzzaman Sir.`,
     },
     {
       id: 2,
       company: "TunicaLabs Media Pvt Ltd",
       icon: TunicaIcon,
-      desc: `Worked with Tunica team on multiple software solutions where I gained
-      insight into project collaboration and industry-standard workflow.`,
+      year: "2022",
+      lists: [
+        "Contributed to James Hardie project with Next.js",
+        "Built components, integrated APIs, fixed bugs",
+        "Managed tasks efficiently using Jira",
+      ],
+      desc: `Worked with multicultural development team that enhance my communication skills in diverse language. There I practiced industry-standard workflow and gain real world experience.`,
     },
     {
       id: 3,
       company: "British Council Bangladesh",
       icon: BritishCouncilIcon,
-      desc: `Worked with Tunica team on multiple software solutions where I gained
-      insight into project collaboration and industry-standard workflow.`,
+      year: "Running",
+      lists: [
+        "Working with a UK-based organization offering flexible freelance jobs",
+        "Conducted exams for Cambridge, Pearson Edexcel, Oxford AQA, and IELTS",
+        "Followed the British Council Code of Conduct strictly",
+      ],
+      desc: `Invigilating exams and taking appropriate actions have strengthened my analytical and observational abilities. Moreover, this experience has enhancing my attention to detail, decision-making skills, and ability to manage responsibilities under pressure.`,
     },
   ];
 
@@ -89,7 +103,7 @@ const ExperiencePage = () => {
                 className="bg-gradient-to-r from-[#3f3f3f] via-[#616161] to-[#5f5f5f] 
   text-white max-w-md p-6 rounded-[50px] shadow-lg relative"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-between gap-4">
                   <Image
                     src={exp.icon}
                     alt={exp.company}
@@ -97,9 +111,24 @@ const ExperiencePage = () => {
                     height={80}
                     className="rounded-full bg-white p-2"
                   />
-                  <h3 className="text-xl font-semibold">{exp.company}</h3>
+                  <h3 className="text-lg font-semibold">{exp.company}</h3>
+                  <h5
+                    className={`px-2 inline-block text-xs font-bold rounded-xl ${
+                      exp.year == "Running"
+                        ? "bg-green-600 text-white"
+                        : "bg-gray-300 text-black"
+                    }`}
+                  >
+                    {exp.year}
+                  </h5>
                 </div>
-                <p className="mt-4 text-sm leading-relaxed">{exp.desc}</p>
+
+                <ul className="mt-2 list-disc list-inside text-sm space-y-1 text-gray-100">
+                  {exp.lists.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+                <p className="mt-1 text-sm leading-relaxed">{exp.desc}</p>
               </div>
             </div>
           ))}

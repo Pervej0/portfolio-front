@@ -2,7 +2,7 @@ import React from "react";
 
 const PageTitle = ({
   pageName,
-  imgSrc = "https://images.unsplash.com/photo-1592938545461-68c9cba71b7f",
+  imgSrc = "https://i.ibb.co.com/1tHn1Mz3/professional.jpg",
 }: {
   pageName: string;
   imgSrc?: string;
