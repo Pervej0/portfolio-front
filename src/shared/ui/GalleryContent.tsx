@@ -12,11 +12,17 @@ import "swiper/css/zoom";
 type propTypes = {
   id: number;
   title: string;
-  src: string;
+  src: any;
 }[];
 
 export default function GalleryContent({ images }: { images: propTypes }) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
+  // Find currently selected image
+  const selectedImage =
+    selectedIndex !== null
+      ? images.find((img) => img.id === selectedIndex)
+      : null;
 
   return (
     <div className="my-16 mx-auto container px-4">
@@ -53,15 +59,20 @@ export default function GalleryContent({ images }: { images: propTypes }) {
         <DialogContent className="p-0 max-w-6xl z-50 w-full bg-black rounded-xl overflow-hidden">
           {selectedIndex !== null && (
             <Swiper
-              initialSlide={selectedIndex}
+              initialSlide={images.findIndex((img) => img.id === selectedIndex)}
               navigation
               zoom
               modules={[Navigation, Zoom]}
-              className="w-full h-[80vh] z-0"
+              className="w-full h-[80vh] z-0 relative"
             >
               {images.map(({ src, id, title }) => (
                 <SwiperSlide key={id}>
-                  <div className="swiper-zoom-container flex items-center justify-center bg-black">
+                  <div className="swiper-zoom-container relative flex items-center justify-center bg-black">
+                    {/* Title overlay */}
+                    <div className="absolute top-0 left-0 w-full bg-black/50 text-white text-center py-2 z-10">
+                      <p className="text-lg font-medium">{title}</p>
+                    </div>
+
                     <Image
                       src={src}
                       alt={title}
