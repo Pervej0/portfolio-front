@@ -1,3 +1,4 @@
+import { images } from "@/asset";
 import GalleryContent from "@/shared/ui/GalleryContent";
 import PageTitle from "@/shared/ui/PageTitle";
 import {
@@ -86,10 +87,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <PageTitle
-        pageName="My Story"
-        imgSrc="https://i.ibb.co.com/3YBWCdT4/my-story.jpg"
-      />
+      <PageTitle pageName="My Story" imgSrc={images.MyStory.src} />
       <section className="relative my-16 py-16 overflow-hidden">
         {/* Central Vertical Line */}
         <div className="absolute left-1/2 top-0 h-full w-1 bg-[#3f3f3f] -translate-x-1/2"></div>

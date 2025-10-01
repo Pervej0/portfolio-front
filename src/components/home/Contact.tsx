@@ -13,6 +13,7 @@ import { Textarea } from "../ui/textarea";
 import { House, Mail, Phone } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "sonner";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const formSchema = z.object({
   fullName: z.string().min(2, "Name must be at least 2 characters long"),
@@ -24,6 +25,9 @@ type FormData = z.infer<typeof formSchema>;
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
   const {
     register,
     handleSubmit,
@@ -34,9 +38,13 @@ const Contact = () => {
   });
 
   useEffect(() => {
-    if (typeof window !== "undefined" && form.current) {
+    if (pathname === "/" && window.location.hash === "#contact") {
+      const section = document.querySelector("#contact");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     }
-  }, []);
+  }, [pathname]);
 
   const onSubmit = (data: FormData) => {
     emailjs

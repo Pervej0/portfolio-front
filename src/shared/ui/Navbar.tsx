@@ -4,11 +4,29 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import "@/styles/Banner.css";
 import MobileNavbar from "./MobileNavbar";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleContactClick = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+
+    if (pathname === "/") {
+      // Smooth scroll to contact section if already on home page
+      const section = document.querySelector("#contact");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Redirect to home with query or hash
+      router.push("/#contact");
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,11 +86,8 @@ const Navbar = () => {
                 </Link>
               </div>
               <div>
-                <Link
-                  className="font-openSans text-lg"
-                  href="#showcase_section"
-                >
-                  Showcase
+                <Link className="font-openSans text-lg" href="/blogs">
+                  Articles
                 </Link>
               </div>
               <div>
@@ -81,9 +96,13 @@ const Navbar = () => {
                 </Link>
               </div>
               <div>
-                <Link className="font-openSans text-lg" href="#contact">
+                <a
+                  href="#contact"
+                  onClick={handleContactClick}
+                  className="font-openSans text-lg"
+                >
                   Get in Touch
-                </Link>
+                </a>
               </div>
             </div>
             <div className="block md:hidden">

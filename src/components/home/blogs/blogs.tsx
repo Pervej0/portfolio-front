@@ -1,21 +1,19 @@
-"use client";
-
 import Image from "next/image";
 import React, { useState } from "react";
-import blogsData from "../../../asset/blogs.json";
 import { ThumbsUp } from "lucide-react";
 import Blog from "./blog";
 import Link from "next/link";
 import CustomContainer from "@/shared/ui/CustomContainer";
 import { Button } from "@/components/ui/button";
+import ThumbsUpBox from "@/components/blog/ThumbsUpBox";
 
-const Blogs = () => {
-  const { img, title, name, description, like, id } = blogsData[0];
-  const [likeCount, setLikeCount] = useState({
-    blog_1: like,
-    blog_2: 2,
-    blog_3: 9,
+const Blogs = async () => {
+  const data = await fetch("http://localhost:3000/api/blogs", {
+    cache: "no-store",
   });
+  const blogs = await data.json();
+
+  const { img, title, author, desc, like, _id } = blogs[0];
 
   return (
     <div className="py-6">
@@ -25,13 +23,8 @@ const Blogs = () => {
       >
         <div className="flex md:flex-row flex-col gap-6 gap-x-8 justify-between items-center md:mt-10">
           <div className="md:w-8/12 w-full flex flex-col items-center">
-            {blogsData?.slice(1, 3).map((item, index) => (
-              <Blog
-                likeCount={likeCount}
-                setLikeCount={setLikeCount}
-                key={index}
-                data={item}
-              />
+            {blogs?.slice(1, 3).map((item: any) => (
+              <Blog key={item._id} blog={item} />
             ))}
           </div>
           <div className="md:w-4/12 w-full">
@@ -48,26 +41,13 @@ const Blogs = () => {
               <div className="p-4 pb-6">
                 <h5 className="text-white text-lg mt-3">{title}</h5>
                 <div className="flex items-center gap-2">
-                  <small className="pr-5">posted by: {name} </small>
-                  <button
-                    onClick={() =>
-                      setLikeCount((prev: any) => {
-                        return {
-                          ...prev,
-                          [`blog_${id}`]: prev[`blog_${id}`] + 1,
-                        };
-                      })
-                    }
-                    type="button"
-                  >
-                    <ThumbsUp className="h-4 w-4" />
-                  </button>
-                  <h5 className="text-md">: {like}</h5>
+                  <small className="pr-5">Posted by: {author} </small>
+                  <ThumbsUpBox like={like} blogId={_id} />
                 </div>
                 <p className="text-light my-3" style={{ fontSize: "15px" }}>
-                  {description.slice(0, 200)} ...
+                  {desc.slice(0, 200)} ...
                 </p>
-                <Link href={`blog/${id}`}>
+                <Link href={`blog/${_id}`}>
                   <Button className="px-3 text-sm rounded-md">Read More</Button>
                 </Link>
               </div>

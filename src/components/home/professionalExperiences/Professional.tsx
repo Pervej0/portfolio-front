@@ -2,22 +2,19 @@ import Image from "next/image";
 import React from "react";
 
 type propTypes = {
+  _id: string;
   imageUrl: any;
   position: string;
   year: number;
   company: string;
   location: string;
   desc: string[];
+  categories: string[];
 };
 
-const Professional = ({
-  imageUrl,
-  position,
-  year,
-  company,
-  location,
-  desc,
-}: propTypes) => {
+const Professional = ({ experience }: { experience: propTypes }) => {
+  const { imageUrl, position, year, company, location, desc, categories } =
+    experience;
   return (
     <div className="border border-gray-500 min-h-[450px] flex justify-center flex-col items-center rounded-xl pb-10 pt-6">
       <div
@@ -46,6 +43,14 @@ const Professional = ({
             <li key={index}>{item}</li>
           ))}
         </ul>
+        <div className="flex gap-2 flex-col md:flex-row items-center mt-3">
+          <h5 className="text-sm">Categories: &nbsp;</h5>
+          {categories?.map((item: string, idx: number) => (
+            <span className="text-xs" key={idx}>
+              {item} &nbsp;
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import {
   BritishCouncilIcon,
   CubixTechnologyIcon,
   GenexIcon,
+  images,
   TunicaIcon,
 } from "@/asset";
 import GalleryContent from "@/shared/ui/GalleryContent";
@@ -21,6 +22,7 @@ const ExperiencePage = () => {
         "Fixed UI bugs, built responsive layouts",
         "Integrated APIs, built custom admin panels",
       ],
+      categories: ["PHP/Laravel App Development", "ERP System", "Frontend"],
       desc: `Worked in a software development team, collaborating with senior developers and receiving feedback that helped me improve my strategies. Among them, Shoriful Vai (Senior Developer) was an exceptional mentor—always helpful and open to questions from juniors.`,
     },
     {
@@ -33,6 +35,7 @@ const ExperiencePage = () => {
         "Handled SQLite database for device apps",
         "Built Excel converter tool to streamline NBR data",
       ],
+      categories: ["SQLite", "NodeJs", "Software Integration", "Device"],
       desc: `At Genex Infosys, worked with the software team and managed sales data via EFD/SDC devices in Dhaka. Gained valuable guidance from Project Manager Zakir Ahmed and Project Lead Kamruzzaman Sir.`,
     },
     {
@@ -45,6 +48,7 @@ const ExperiencePage = () => {
         "Built components, integrated APIs, fixed bugs",
         "Managed tasks efficiently using Jira",
       ],
+      categories: ["React/NextJs", "Agile Methodology", "Frontend"],
       desc: `Worked with multicultural development team that enhance my communication skills in diverse language. There I practiced industry-standard workflow and gain real world experience.`,
     },
     {
@@ -86,7 +90,7 @@ const ExperiencePage = () => {
 
   return (
     <>
-      <PageTitle pageName="Industrial Experiences" />
+      <PageTitle pageName="Industrial Experiences" imgSrc={images.Profession} />
       <section className="relative my-16 py-16 overflow-hidden">
         {/* Central Vertical Line */}
         <div className="absolute left-1/2 top-0 h-full w-1 bg-[#3f3f3f] -translate-x-1/2"></div>

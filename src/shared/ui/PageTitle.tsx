@@ -1,28 +1,29 @@
-import React from "react";
+import Image from "next/image";
 
-const PageTitle = ({
-  pageName,
-  imgSrc = "https://i.ibb.co.com/1tHn1Mz3/professional.jpg",
-}: {
+type PageTitleProps = {
   pageName: string;
-  imgSrc?: string;
-}) => {
+  imgSrc: any;
+};
+
+export default function PageTitle({ pageName, imgSrc }: PageTitleProps) {
   return (
-    <section
-      className="h-[40vh] bg-cover bg-center"
-      style={{
-        backgroundImage: `linear-gradient(
-                    rgba(43, 43, 43, 0.7),
-                    rgba(43, 43, 43, 0.6)
-                  ),
-                  url(${imgSrc});`,
-      }}
-    >
-      <div className="container h-full flex justify-center items-center">
-        <h3 className="md:text-3xl text-2xl uppercase">{pageName}</h3>
+    <section className="relative h-[40vh] w-full">
+      <Image
+        src={imgSrc}
+        alt={pageName}
+        fill
+        priority
+        className="object-cover object-center"
+      />
+
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/60"></div>
+
+      {/* Content */}
+      <div className="container relative h-full flex justify-center items-center z-10">
+        <h3 className="md:text-3xl text-2xl uppercase text-white">
+          {pageName}
+        </h3>
       </div>
     </section>
   );
-};
-
-export default PageTitle;
+}
