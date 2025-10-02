@@ -11,7 +11,9 @@ const Blogs = async () => {
   const data = await fetch("http://localhost:3000/api/blogs", {
     cache: "no-store",
   });
-  const blogs = await data.json();
+  const blogs = await data?.json();
+
+  if (!blogs[0]) return <></>;
 
   const { img, title, author, desc, like, _id } = blogs[0];
 

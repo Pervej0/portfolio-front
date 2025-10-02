@@ -103,6 +103,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json(result); // returns info about inserted docs
   } catch (error) {
+    console.log(error, "xpxpxxp");
+
     return NextResponse.json(
       { error: "Failed to create blog" },
       { status: 500 }
