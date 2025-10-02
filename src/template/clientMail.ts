@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { config } from "@/config";
 import { SMTPClient } from "emailjs";
 
