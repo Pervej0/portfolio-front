@@ -62,7 +62,6 @@ export async function PUT(
 ) {
   try {
     const body: BlogType = await req.json();
-    console.log(body, params.id, "xxxxxxx");
     // const errorMsg = validateBlog(body);
     // if (errorMsg)
     //   return NextResponse.json({ error: errorMsg }, { status: 400 });

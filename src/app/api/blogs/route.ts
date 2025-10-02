@@ -11,37 +11,6 @@ type BlogType = {
   desc: string;
 };
 
-// Example static blog data
-const blogContent: BlogType[] = [
-  {
-    author: "admin",
-    title: "Behind Great Product Design",
-    comment: 1,
-    like: 4,
-    img: "https://i.ibb.co/Rv6QmBT/ITHelp.png",
-    tags: ["tech", "social", "software"],
-    desc: "Sed vehicula ac est quis tempus. Aliquam nec elit a velit dictum gravida. Pellentesque orci odio, imperdiet ac elementum in, pharetra quis nibh.Aliquam nec elit a velit dictum gravida. Pellentesque orci odio.Sed vehicula ac est quis tempus. Aliquam nec elit a velit dictum gravida. Pellentesque orci odio, imperdiet ac elementum in, pharetra quis nibh.Aliquam nec elit a velit dictum gravida. Pellentesque orci odio.Sed vehicula ac est quis tempus. Aliquam nec elit a velit dictum gravida. Pellentesque orci odio, imperdiet ac elementum in, pharetra quis nibh.Aliquam nec elit a velit dictum gravida. Pellentesque orci odio.",
-  },
-  {
-    author: "admin",
-    title: "On ye great do child sorry ",
-    comment: 2,
-    like: 5,
-    img: "https://i.ibb.co/m8zVfpP/g1.jpg",
-    tags: ["tech", "social"],
-    desc: "Sed vehicula ac est quis tempus. Aliquam nec elit a velit dictum gravida. Pellentesque orci odio, imperdiet ac elementum in, pharetra quis nibh.Aliquam nec elit a velit dictum gravida. Pellentesque orci odio.Sed vehicula ac est quis tempus. Aliquam nec elit a velit dictum gravida. Pellentesque orci odio, imperdiet ac elementum in, pharetra quis nibh.Aliquam nec elit a velit dictum gravida. Pellentesque orci odio.Sed vehicula ac est quis tempus. Aliquam nec elit a velit dictum gravida. Pellentesque orci odio, imperdiet ac elementum in, pharetra quis nibh.Aliquam nec elit a velit dictum gravida. Pellentesque orci odio.",
-  },
-  {
-    author: "admin",
-    title: "Seen you eyes son",
-    comment: 3,
-    like: 9,
-    img: "https://i.ibb.co/sPWsFW0/newBooks.png",
-    tags: ["tech", "software"],
-    desc: "Sed vehicula ac est quis tempus. Aliquam nec elit a velit dictum gravida. Pellentesque orci odio, imperdiet ac elementum in, pharetra quis nibh.Aliquam nec elit a velit dictum gravida. Pellentesque orci odio.Sed vehicula ac est quis tempus. Aliquam nec elit a velit dictum gravida. Pellentesque orci odio, imperdiet ac elementum in, pharetra quis nibh.Aliquam nec elit a velit dictum gravida. Pellentesque orci odio.Sed vehicula ac est quis tempus. Aliquam nec elit a velit dictum gravida. Pellentesque orci odio, imperdiet ac elementum in, pharetra quis nibh.Aliquam nec elit a velit dictum gravida. Pellentesque orci odio.",
-  },
-];
-
 // Simple validation function
 function validateBlog(blog: BlogType) {
   if (!blog.author || typeof blog.author !== "string") {
@@ -85,26 +54,27 @@ export async function POST(req: NextRequest) {
   try {
     const client = await clientPromise;
     const db = client.db("my_profile");
+    const blog: BlogType = await req.json();
 
-    const validBlogs = [];
-
-    for (const blog of blogContent) {
-      const errorMsg = validateBlog(blog);
-      if (errorMsg) {
-        return NextResponse.json({ error: errorMsg }, { status: 400 });
-      }
-      validBlogs.push({
-        ...blog,
-        createdAt: new Date(),
-      });
+    const errorMsg = validateBlog(blog);
+    if (errorMsg) {
+      return NextResponse.json({ error: errorMsg }, { status: 400 });
     }
 
-    const result = await db.collection("blogs").insertMany(validBlogs);
+    const result = await db.collection("blogs").insertOne({
+      ...blog,
+      createdAt: new Date(),
+    });
 
-    return NextResponse.json(result); // returns info about inserted docs
+    // Return inserted document
+    const insertedBlog = {
+      _id: result.insertedId,
+      ...blog,
+    };
+
+    return NextResponse.json(insertedBlog);
   } catch (error) {
-    console.log(error, "xpxpxxp");
-
+    console.error(error);
     return NextResponse.json(
       { error: "Failed to create blog" },
       { status: 500 }
