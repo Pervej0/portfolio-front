@@ -49,7 +49,7 @@ const Blogs = async () => {
                 <p className="text-light my-3" style={{ fontSize: "15px" }}>
                   {desc.slice(0, 200)} ...
                 </p>
-                <Link href={`blog/${_id}`}>
+                <Link href={`blogs/${_id}`}>
                   <Button className="px-3 text-sm rounded-md">Read More</Button>
                 </Link>
               </div>

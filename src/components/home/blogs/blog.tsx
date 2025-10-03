@@ -27,7 +27,7 @@ const SingleBlog = ({ blog }: any) => {
           <p className="text-light my-3" style={{ fontSize: "15px" }}>
             {blog.desc.slice(0, 250)} ...
           </p>
-          <Link href={`blog/${blog._id}`}>
+          <Link href={`blogs/${blog._id}`}>
             <Button className="px-3 text-sm rounded-md">Read More</Button>
           </Link>
         </div>
