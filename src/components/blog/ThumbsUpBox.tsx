@@ -1,5 +1,6 @@
 "use client";
 
+import { blogDataUpdate } from "@/services/actions/blogsData";
 import { ThumbsUp } from "lucide-react";
 import React, { useState, useEffect } from "react";
 
@@ -34,13 +35,7 @@ const ThumbsUpBox: React.FC<ThumbsUpBoxProps> = ({ like, blogId }) => {
       localStorage.setItem("likedBlogs", JSON.stringify(likedBlogs));
 
       // Send PUT request
-      await fetch(`/api/blogs/${blogId}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ like: likes + 1 }),
-      });
+      blogDataUpdate(blogId, likes);
     } catch (error) {
       console.error("Failed to update like:", error);
       // rollback if failed

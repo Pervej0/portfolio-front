@@ -2,11 +2,15 @@ import { images } from "@/asset";
 import ThumbsUpBox from "@/components/blog/ThumbsUpBox";
 import PageTitle from "@/shared/ui/PageTitle";
 import { ThumbsUp } from "lucide-react";
+import { headers } from "next/headers";
 import Image from "next/image";
 import React from "react";
 
 const page = async ({ params }: { params: { slug: string } }) => {
-  const data = await fetch(`http://localhost:3000/api/blogs/${params.slug}`, {
+  const headerList = headers();
+  const host = headerList.get("host");
+  const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
+  const data = await fetch(`${protocol}://${host}/api/blogs/${params.slug}`, {
     cache: "no-store",
   });
   const blog = await data.json();

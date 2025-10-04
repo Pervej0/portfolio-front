@@ -1,10 +1,15 @@
 import { images } from "@/asset";
+import { headers } from "next/headers";
 import Blog from "@/components/home/blogs/blog";
 import PageTitle from "@/shared/ui/PageTitle";
 import React from "react";
 
 const myBlogs = async () => {
-  const data = await fetch("http://localhost:3000/api/blogs", {
+  const headerList = headers();
+  const host = headerList.get("host");
+  const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
+
+  const data = await fetch(`${protocol}://${host}/api/blogs`, {
     cache: "no-store",
   });
   const blogs = await data?.json();
