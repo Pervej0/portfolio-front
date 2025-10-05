@@ -52,7 +52,7 @@ const SocialIcon = () => {
       {/* Twitter */}
       <li className="relative mx-2 p-3 rounded-full border border-blue-300 text-blue-400 cursor-pointer transition-transform transform hover:scale-125 hover:bg-blue-400 hover:text-white">
         <Link
-          href="https://twitter.com/Pervej0"
+          href="https://x.com/Pervej00"
           target="_blank"
           rel="noopener noreferrer"
           title="Twitter"

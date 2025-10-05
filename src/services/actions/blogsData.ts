@@ -1,13 +1,9 @@
 "use server";
 
-import { headers } from "next/headers";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 export const blogDataUpdate = async (blogId: string, likes: number) => {
-  const headerList = headers();
-  const host = headerList.get("host");
-  const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-
-  await fetch(`${protocol}://${host}/api/blogs/${blogId}`, {
+  await fetch(`${baseUrl}/api/blogs/${blogId}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",

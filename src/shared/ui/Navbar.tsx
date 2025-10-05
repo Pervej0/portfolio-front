@@ -5,6 +5,8 @@ import React, { useEffect, useState } from "react";
 import "@/styles/Banner.css";
 import MobileNavbar from "./MobileNavbar";
 import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
+import { images } from "@/asset";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -70,7 +72,14 @@ const Navbar = () => {
         <div className="container flex justify-between items-center">
           <div>
             <h2 className="text-3xl font-mono">
-              <Link href="/">Pervej</Link>
+              <Link href="/">
+                <Image
+                  src={images.Profile}
+                  height={80}
+                  width={80}
+                  alt="Pervej"
+                />
+              </Link>
             </h2>
           </div>
           <div className="flex items-center">

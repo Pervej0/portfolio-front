@@ -3,7 +3,7 @@
 import { blogDataUpdate } from "@/services/actions/blogsData";
 import { ThumbsUp } from "lucide-react";
 import React, { useState, useEffect } from "react";
-
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 interface ThumbsUpBoxProps {
   like: number;
   blogId: string;
@@ -35,7 +35,13 @@ const ThumbsUpBox: React.FC<ThumbsUpBoxProps> = ({ like, blogId }) => {
       localStorage.setItem("likedBlogs", JSON.stringify(likedBlogs));
 
       // Send PUT request
-      blogDataUpdate(blogId, likes);
+      await fetch(`${baseUrl}/api/blogs/${blogId}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ like: likes + 1 }),
+      });
     } catch (error) {
       console.error("Failed to update like:", error);
       // rollback if failed

@@ -6,9 +6,10 @@ import Link from "next/link";
 import CustomContainer from "@/shared/ui/CustomContainer";
 import { Button } from "@/components/ui/button";
 import ThumbsUpBox from "@/components/blog/ThumbsUpBox";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 const Blogs = async () => {
-  const data = await fetch("http://localhost:3000/api/blogs", {
+  const data = await fetch(`${baseUrl}/api/blogs`, {
     cache: "no-store",
   });
   const blogs = await data?.json();

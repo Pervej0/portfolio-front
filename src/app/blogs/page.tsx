@@ -3,13 +3,10 @@ import { headers } from "next/headers";
 import Blog from "@/components/home/blogs/blog";
 import PageTitle from "@/shared/ui/PageTitle";
 import React from "react";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
 const myBlogs = async () => {
-  const headerList = headers();
-  const host = headerList.get("host");
-  const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
-
-  const data = await fetch(`${protocol}://${host}/api/blogs`, {
+  const data = await fetch(`${baseUrl}/api/blogs`, {
     cache: "no-store",
   });
   const blogs = await data?.json();

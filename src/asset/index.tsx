@@ -1,6 +1,7 @@
 import downArray from "./images/down-arrow.gif";
 import MyStory from "./images/my-story.jpeg";
 import Profession from "./images/profession.jpeg";
+import Profile from "./images/profile.png";
 import FrontEndIcon from "./gif/frontend.gif";
 import SoftwareIcon from "./gif/software.gif";
 import SoftwareIntegration from "./gif/software-integration.gif";
@@ -12,6 +13,7 @@ const images = {
   SoftwareIntegration,
   Profession,
   MyStory,
+  Profile,
 };
 
 export { images };
