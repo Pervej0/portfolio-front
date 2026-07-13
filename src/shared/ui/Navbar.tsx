@@ -115,7 +115,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="block md:hidden">
-              <MobileNavbar />
+              <MobileNavbar handleContactClick={handleContactClick} />
             </div>
           </div>
         </div>

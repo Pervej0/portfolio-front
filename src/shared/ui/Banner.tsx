@@ -40,10 +40,7 @@ const Banner = () => {
             </div>
             <div className="flex items-center justify-center mt-6 gap-x-3">
               <div className="flex gap-x-4">
-                <Link
-                  href="https://www.hackerrank.com/profile/Pervej0"
-                  target="_blank"
-                >
+                <Link href="https://leetcode.com/u/Pervej00" target="_blank">
                   <Image
                     src={LeetCodeIcon}
                     width={150}
@@ -62,7 +59,7 @@ const Banner = () => {
                 </Link>
               </div>
               <Link
-                href="https://drive.google.com/file/d/1mYAZq1JDO_IarrOkYPyTnZGDuf8Fad2s/view"
+                href="https://drive.google.com/file/d/1mrGYVN77Y8JVYXBNGOQkqB9fs8hG-PVU/view"
                 target="_blank"
               >
                 <Button className="border-2 flex items-center gap-x-2 rounded-md px-4 py-2 border-gray-100">

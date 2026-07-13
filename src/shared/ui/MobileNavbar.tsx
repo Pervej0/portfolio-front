@@ -15,7 +15,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-const MobileNavbar = () => {
+const MobileNavbar = ({ handleContactClick }: any) => {
   return (
     <Drawer direction="left">
       <DrawerTrigger asChild>
@@ -38,24 +38,28 @@ const MobileNavbar = () => {
                     </Link>
                   </div>
                   <div className="w-full mx-auto py-3 text-center border-b">
-                    <Link className="font-openSans text-md" href="/home">
+                    <Link className="font-openSans text-md" href="/about">
                       About
                     </Link>
                   </div>
                   <div className="w-full mx-auto py-3 text-center border-b">
-                    <Link className="font-openSans text-md" href="/home">
-                      Showcase
+                    <Link className="font-openSans text-md" href="/blogs">
+                      Articles
                     </Link>
                   </div>
                   <div className="w-full mx-auto py-3 text-center border-b">
-                    <Link className="font-openSans text-md" href="/home">
+                    <Link className="font-openSans text-md" href="/experience">
                       Experiences
                     </Link>
                   </div>
                   <div className="w-full mx-auto py-3 text-center">
-                    <Link className="font-openSans text-md" href="/home">
-                      Experiences
-                    </Link>
+                    <a
+                      href="#contact"
+                      onClick={handleContactClick}
+                      className="font-openSans text-lg"
+                    >
+                      Get in Touch
+                    </a>
                   </div>
                 </div>
               </div>
