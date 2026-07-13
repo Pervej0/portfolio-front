@@ -31,10 +31,10 @@ const Banner = () => {
                   Working as
                 </h6>
                 <h2 className="text-3xl text-left tracking-wide font-mono font-bold my-2 bg-gradient-to-r from-cyan-400 to-fuchsia-700 bg-clip-text text-transparent">
-                  Software Developer
+                  Software & Data Engineer
                 </h2>
                 <h6 className="text-left font-semibold text-md text-green-500">
-                  Opening for New position <small>( Onsite or Remote )</small>
+                   Shyamoli, Dhaka
                 </h6>
               </div>
             </div>
